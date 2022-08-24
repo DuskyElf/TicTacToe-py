@@ -84,7 +84,7 @@ class Game():
     
     # Checking if the move is valid or not
     def validMove(self, move):
-        if move[0] > 2 and move[1] > 2:
+        if move[0] > 2 or move[1] > 2:
             return False
         return self.board.boardState[move[0]][move[1]] == Board.N
     
